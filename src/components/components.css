@@ -16,26 +16,34 @@
     text-decoration: none;
   }
 
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
 .logo-complete {
     width: 130px;
     height: 130px;
     display: flex;
     align-items: center;
+    border-radius: 50%;
 }
 
-.navbar-ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+.navbar-bg {
+    background-color: #bde0fe;
 
+
+}
 .navbar-li {
     text-transform: uppercase;
+}
+
+.welcome {
+    text-align: center;
+    padding: 20px;
+    opacity: 0.7;
+}
+
+.welcome-title {
+    font-family:  Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+
+}
+.welcome-txt {
+    font-size: 20px
 }

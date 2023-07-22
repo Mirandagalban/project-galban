@@ -6,7 +6,7 @@ import CartWidget from './CartWidget';
 
 const NavBar = () => {
         return (
-            <Navbar expand="lg" className="--bs-body-bg">
+            <Navbar expand="lg" className="--bs-body-bg navbar-bg">
               <Container>
                 <Navbar.Brand href="#home"><a href="index.html"> <img src="./public/logoCrochetComplete.png" alt="logo" className='logo-complete' /></a></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />

@@ -8,8 +8,8 @@ function App() {
 
   return (
     <div className='app'>
-      {/*navBar*/}
       <NavBar/>
+      <ItemListContainer greeting={"Bienvenidos"} title={"Te invito a descubrir la belleza del arte Amigurumi"}></ItemListContainer>
     </div>
   )
 }
