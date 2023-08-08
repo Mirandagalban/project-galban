@@ -1,8 +1,8 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import './components.css'
-import CartWidget from './CartWidget';
+import './navbar.css'
+import CartWidget from '../CartWidget/CartWidget';
 
 const NavBar = () => {
         return (
@@ -10,7 +10,7 @@ const NavBar = () => {
               <Container>
                 <Navbar.Brand href="#home"><a href="index.html"> <img src="./public/logoCrochetComplete.png" alt="logo" className='logo-complete' /></a></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav ">
+                <Navbar.Collapse id="basic-navbar-nav " className='navbar-ul'>
                   <Nav className="me-auto navbar-ul ">
                     <Nav.Link className= 'navbar-li' href="#" >Almohadones</Nav.Link>
                     <Nav.Link className= 'navbar-li' href="#">Peluches</Nav.Link>
