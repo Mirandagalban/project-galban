@@ -1,0 +1,18 @@
+.item-detail  {
+    border: 1px;
+    display: flex;
+    justify-content: center;
+    background-color: #d1e3f5;
+    padding: 15px 20px ;
+    align-items: center;
+    width: 100%;
+    gap: 50px;
+    flex-direction: row-reverse;
+    text-align: center;
+
+}
+.item-detail img {
+    height: 300px;
+    border-radius: 5%;
+}
+

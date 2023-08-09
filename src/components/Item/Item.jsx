@@ -1,17 +1,22 @@
 import React from "react";
+import { Card } from "react-bootstrap";
+import {Button} from "react-bootstrap";
+import './item.css'
 
 const Item = ({prod})=> {
     return (
-        <>
-        <div className="product-container" key = {id}>
-            <img src={prod.imagen} alt="" />
-            <h3>{prod.nombre}</h3>
-            <p>{prod.descripcion}</p>
-            <p>${prod.precio}</p>
-            <p>El armado del producto {prod.nombre} puede demorar {armado}</p>
-            <button id= {prod.id}>Agregar</button>
-        </div>
-        </>
+    <Card style={{ width: '18rem' }} className="product-card">
+      <Card.Img variant="top" src= {prod.imagen} />
+      <Card.Body>
+        <Card.Title className="card-title">{prod.nombre}</Card.Title>
+        <Card.Text>
+        {prod.descripcion}
+        <p>El armado del producto {prod.nombre} puede demorar {prod.armado}</p>
+        <h6>Precio: $ {prod.precio}</h6>
+        </Card.Text>
+        <Button className="opacity-75 " id= {prod.id} variant="primary" >Agregar</Button>
+      </Card.Body>
+    </Card>
     )
 }
 

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import '../NavBar/navbar.css'
-import ItemCount from "../ItemCount/ItemCount";
 import { getProducts } from "../../mock/data";
+import ItemList from "../ItemList/itemList";
 
  const ItemListContainer = ({greeting, title }) => {
   const [products, setProducts] = useState ([])
@@ -11,9 +11,7 @@ import { getProducts } from "../../mock/data";
   .catch((error)=>console.error(error))
    }, [] )
   
-  const onAdd = (cantidad)=> {
-    console.log(`compraste ${cantidad} productos`)
-  }
+ 
 
     return (
         <>
@@ -21,7 +19,7 @@ import { getProducts } from "../../mock/data";
             <h1 className="welcome-title">{greeting}</h1>
             <p className="welcome-txt"> {title}</p>
          </div>
-         <ItemCount stock= {5} onAdd={onAdd} initial={1}/>
+         <ItemList products={products}/>
          </>
     )
 };
