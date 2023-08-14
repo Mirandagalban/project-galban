@@ -4,13 +4,18 @@ import { useState } from "react";
 import { getItem } from "../../mock/data";
 import ItemDetail from "../ItemDetail/ItemDetail";
 import '../ItemDetail/itemDetail.css'
+import { useParams } from "react-router-dom";
 
 
 
 const ItemDetailContainer = ()=> {
+
     const [producto, setProducto] = useState ({})
+    const {id} = useParams()
+
+
     useEffect(()=>{
-        getItem()
+        getItem(Number(id))
             .then((res) => setProducto(res))
             .catch((error) => console.error(error));
     } , [])
