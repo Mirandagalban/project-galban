@@ -1,0 +1,82 @@
+.pie-pagina {
+    width: 100%;
+    height: auto;
+    background-color:  #d1e3f5;
+    font-family: sans-serif;
+    padding: 15px;
+  }
+  .pie-pagina .grupo-1 {
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 10px;
+  }
+  .pie-pagina .grupo-1 .box figure{
+    display: flex;
+    justify-content: center;
+  }
+  .pie-pagina .grupo-1 .box figure a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  .pie-pagina .grupo-1 .box figure img {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+  }
+  .pie-pagina .grupo-1 .box h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    opacity: 0.79;
+  }
+  .pie-pagina .grupo-1 .box a {
+    text-decoration: none;
+    display: inline-block;
+    height: 25px;
+    width: 45px;
+    color: black;
+    text-align: center;
+  }
+  .pie-pagina .grupo-1 .box p {
+    opacity: 0.69;
+    margin-bottom: 10px;
+  }
+  .pie-pagina .grupo-1 .red-social .link-red {
+    text-decoration: none;
+    display: inline-block;
+    max-height: 45px;
+    color: black;
+    margin-right: 10px;
+    text-align: center;
+  }
+  .pie-pagina .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .pie-pagina .grupo-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .promociones {
+  text-align: center;
+  }
+  
+  @media (max-width: 700px) {
+    .pie-pagina .grupo-1 {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }}

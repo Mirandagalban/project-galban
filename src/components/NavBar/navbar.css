@@ -38,9 +38,12 @@
 }
 
 .welcome {
+    display: flex;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     opacity: 0.7;
+    justify-content: baseline;
+    flex-direction: column;
 }
 
 .welcome-title {

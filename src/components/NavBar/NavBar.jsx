@@ -9,7 +9,7 @@ const NavBar = () => {
         return (
             <Navbar expand="lg" className="--bs-body-bg navbar-bg">
               <Container>
-                <Navbar.Brand as= {NavLink} to= '/' ><img src="./public/logoCrochetComplete.png" alt="logo" className='logo-complete' /></Navbar.Brand>
+                <Navbar.Brand as= {NavLink} to= '/' ><img src="../public/logoCrochetComplete.png" alt="logo" className='logo-complete' /></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav " className='navbar-ul'>
                   <Nav className="me-auto navbar-ul ">
