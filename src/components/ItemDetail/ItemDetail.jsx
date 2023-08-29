@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import './itemdetail.css'
 import ItemCount from "../ItemCount/ItemCount";
+import { Link } from "react-router-dom";
 
 
 const ItemDetail=({producto})=> {
+    const [quantityAdded, setQuantityAdded]= useState(false)
     const onAdd = (cantidad)=> {
         console.log(`compraste ${cantidad} productos`)
+        setQuantityAdded(cantidad)
       }
     return (
     
@@ -15,7 +18,8 @@ const ItemDetail=({producto})=> {
                     <h6 className="item-text mt-4">El armado del producto {producto.nombre} puede demorar {producto.armado}</h6>
                     <p>{producto.descripcion}</p>
                     <p>Precio: $ {producto.precio} </p>
-                    <ItemCount stock= {producto.stock} onAdd={onAdd} initial={1}/>
+                    { !quantityAdded ? <ItemCount stock= {producto.stock} onAdd={onAdd} initial={1}/>
+                    : <Link to='/cart' className="btn btn-primary mt-2">Ir al carrito</Link>}
                 </div>
                 <div className="grid-img">
                     <img src={producto.imagen} alt="" />

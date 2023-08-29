@@ -11,7 +11,7 @@ const Item = ({prod})=> {
       <Card.Body>
         <Card.Title className="card-title">{prod.nombre}</Card.Title>
         <Card.Text>
-        <h6>Precio: $ {prod.precio}</h6>
+        Precio: $ {prod.precio}
         </Card.Text>
         <Button as= {Link} to={`/item/${prod.id}`} className="opacity-75 " id= {prod.id} variant="primary" >Ver más</Button> 
       </Card.Body>

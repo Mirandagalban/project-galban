@@ -6,20 +6,20 @@ import { Link } from "react-router-dom";
 const Footer = () => {
  return (
    <div>
-    <footer class="pie-pagina">
+    <footer className="pie-pagina">
       
-    <div class="grupo-1">
-      <div class="box">
+    <div className="grupo-1">
+      <div className="box">
           <figure>
              <Link to= '/'> <img  src='../public/logoCrochetComplete.png' alt="logo" /></Link>
           </figure>
       </div>
-      <div class="box">
+      <div className="box">
         <FaMapPin/>
           <p className="mt-2"> CABALLITO, BUENOS AIRES.</p>
       </div>
-      <div class="box">
-          <div class="red-social">
+      <div className="box">
+          <div className="red-social">
             <div className="link-red">
             <FaInstagram/>
             </div>
@@ -34,7 +34,7 @@ const Footer = () => {
       </div>
       </div>
     </div>
-        <div class="grupo-2">
+        <div className="grupo-2">
              <small>&copy; 2023 <b>AL CROCHET CON GRACE</b> - Todos los derechos reservados. </small>
         </div>
     </footer>

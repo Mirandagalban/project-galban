@@ -29,9 +29,9 @@ import { useParams } from "react-router-dom";
        <div>
         {
             loading ? 
-            <div class="d-flex justify-content-center mt-5" >
-            <div class="spinner-border spinner-border-lg "  role="status" >
-              <span class="visually-hidden">Loading...</span>
+            <div className="d-flex justify-content-center mt-5" >
+            <div className="spinner-border spinner-border-lg "  role="status" >
+              <span className="visually-hidden">Loading...</span>
             </div>
           </div> 
           :
