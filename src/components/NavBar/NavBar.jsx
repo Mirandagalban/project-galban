@@ -18,7 +18,7 @@ const NavBar = () => {
                     <Nav.Link as= {NavLink} to= '/categoria/bebes' className= 'navbar-li'>recien nacidos</Nav.Link>
                     <Nav.Link className= 'navbar-li' href="#">contactanos</Nav.Link>
                   </Nav>
-                  <CartWidget/>
+                 <NavLink to='/Cart'><CartWidget/></NavLink> 
                 </Navbar.Collapse>
               </Container>
             </Navbar>

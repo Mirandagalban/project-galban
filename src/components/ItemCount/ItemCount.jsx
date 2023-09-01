@@ -5,6 +5,7 @@ import Button from 'react-bootstrap/Button';
 const ItemCount= ({stock, onAdd, initial})=> {
     const [count , SetCount]= useState(initial)
 
+
     const restar =() => {
         if (count >0 ){
         SetCount (count-1)
@@ -23,7 +24,7 @@ const ItemCount= ({stock, onAdd, initial})=> {
             <span className="btn">{count}</span>
             <Button onClick={sumar}>+</Button>
         </div>
-        <Button className="mt-2" disabled= {count===0 || count>stock} onClick={()=>onAdd(count)} >comprar</Button>
+        <Button className="mt-2" disabled= {count===0 || count>stock} onClick={()=>onAdd(count)} >Comprar</Button>
     </div>
         
     )

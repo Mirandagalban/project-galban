@@ -1,0 +1,32 @@
+.cart-list {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    padding: 30px ;
+    margin: 0 30px;
+}
+.btn-x {
+    margin: 15px;
+    display: flex;
+    margin-left: 300px;
+}
+
+.btn {
+    gap: 20px;
+}
+.cart-list-table {
+    display: flex;
+    gap: 30px;  
+     align-items: center;
+     justify-content: end;
+
+}
+
+.empty-cart {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px ;
+    margin: 0 30px;
+
+}
