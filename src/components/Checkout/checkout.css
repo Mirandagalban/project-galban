@@ -1,0 +1,75 @@
+.bienvenido-form {
+    margin: 0 auto;
+    padding: 20px;
+    padding-bottom: 20px;
+    background-color: #d1e3f5;
+    border: solid white 40px;
+    opacity: .9;
+  }
+  .bienvenido-form h2 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 36px;
+    font-family: serif;
+  }
+  .bienvenido-form p {
+    font-size: 18px;
+    width: 40%;
+    font-family: system-ui;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 50%;
+    padding: 10px 30px;
+  }
+  .formulario-elements {
+    width: 80%;
+    border: 2px solid black;
+  }
+  .formulario-elements::-moz-placeholder {
+    padding: 10px;
+  }
+  .formulario-elements::placeholder {
+    padding: 10px;
+  }
+  .formulario-elements-txt {
+    padding: 10px;
+    font-family: system-ui;
+    font-size: larger;
+  }
+  .formulario-body {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+  }
+  .btn-registro {
+    width: 35%;
+    background-color: white;
+    margin-top: 10px;
+    border: black 2px solid;
+    padding: 5px;
+  }
+  
+  @media (max-width: 700px) {
+    .formulario {
+      width: 100%;
+    }
+    .bienvenido-form p {
+      width: 70%;
+      font-size: 14px;
+    }
+    .bienvenido-form h1 {
+      font-size: 26px;
+    }
+  }

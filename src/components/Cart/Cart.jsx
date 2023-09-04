@@ -12,7 +12,7 @@ const Cart = ()=> {
             <div>
             <h5 className="mt-4 ms-4">Productos seleccionados:</h5>
              {cart.map ((item)=> <CartList key={item.id} item={item}/>)}
-            <h3>Total a pagar : ${total()}</h3>
+            <h3 className="ms-4">Total a pagar : ${total()}</h3>
             <section>
             <button className= 'btn btn-danger m-4 mt-2' onClick={clear}> Vaciar carrito </button>
             <Link to='/checkout' className="btn btn-primary m-4 mt-2"> Finalizar compra </Link>

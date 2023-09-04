@@ -1,29 +1,33 @@
 import React, { useEffect, useState } from "react";
 import '../NavBar/navbar.css'
-import { getProducts } from "../../mock/data";
 import ItemList from "../ItemList/itemList";
 import { useParams } from "react-router-dom";
+import { collection, getDocs, query, where } from "firebase/firestore";
+import { db } from '../../firebase/firebase';
+
 
 
  const ItemListContainer = ({greeting, title }) => {
   const [products, setProducts] = useState ([])
   const{categoriaId} = useParams()
-  const [loading, setLoading]= useState(false)
+  const [loading, setLoading]= useState(true)
 
-  useEffect (()=>{
-    setLoading(true)
-  getProducts()
-  .then((res)=> {
-    if (categoriaId){
-        setProducts (res.filter((item)=> item.categoria == categoriaId))
-    }else{
-        setProducts(res)
-    }
-  })
-  .catch((error)=>console.error(error))
-  .finally(()=> setLoading(false))
-   }, [categoriaId] )
-
+    useEffect(()=>{
+      setLoading(true)
+      const coleccionProductos= categoriaId ? query(collection(db, "productos"), where("categoria", "==", categoriaId)): collection(db, "productos")
+      getDocs(coleccionProductos)
+      .then((res)=>{
+      const list= res.docs.map ((product)=>{
+        return{
+          id: product.id,
+          ...product.data()
+        }
+      })
+      setProducts(list)
+    })
+      .catch((error)=> console.log (error))
+      .finally(()=> setLoading(false))
+    },[categoriaId])
 
     return (
        <div>

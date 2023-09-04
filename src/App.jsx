@@ -10,7 +10,21 @@ import Cart from './components/Cart/Cart'
 import { CartProvider } from './context/CartContext';
 import Checkout from './components/Checkout/Checkout';
 
+
+
 function App() {
+
+ /* //como filtrar algo particular
+  const query= query (collection (db, 'productos'), where("precio", '>', 50))
+
+  useEffect(()=> {
+    const coleccionRef = collection(db, "productos");
+    getDocs(coleccionRef).then(snapshot=> {
+    console.log (snapshot);
+    snapshot.forEach((doc)=> console.log (doc.data()))
+    })
+    .catch ((error)=> console.log (error));
+  },[])*/
 
   return (
     <CartProvider>
