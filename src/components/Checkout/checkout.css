@@ -73,3 +73,21 @@
       font-size: 26px;
     }
   }
+
+  .order-checkout {
+    padding: 40px;
+    text-align: center;
+  }
+
+  .btn-checkout {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #578fc7 ;
+    color: black;
+    font-weight:500 ;
+    border: #578fc7;
+    padding: 5 10px;
+    opacity: 0.95;
+
+
+  }

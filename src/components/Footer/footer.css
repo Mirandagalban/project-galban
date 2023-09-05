@@ -69,11 +69,7 @@
     align-items: center;
     flex-direction: column;
   }
-  
-  .promociones {
-  text-align: center;
-  }
-  
+    
   @media (max-width: 700px) {
     .pie-pagina .grupo-1 {
       display: flex;
